@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lista de contactos</string>
+    <string name="button_new_contact">Crear Contacto</string>
+    <string name="hint_email">Correo electrónico</string>
+    <string name="hint_last_name">Apellido</string>
+    <string name="hint_name">Nombre</string>
+    <string name="hint_phone_number">Teléfono</string>
+</resources>
