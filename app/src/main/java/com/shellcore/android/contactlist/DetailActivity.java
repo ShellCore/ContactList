@@ -12,6 +12,9 @@ public class DetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detail);
 
         TextView contactName = (TextView) findViewById(R.id.contact_name);
+        TextView contactLastName = (TextView) findViewById(R.id.contact_last_name);
+        TextView contactEmail = (TextView) findViewById(R.id.contact_email);
+        TextView contactPhone = (TextView) findViewById(R.id.contact_phone);
 
         Bundle bundle = new Bundle();
         bundle = getIntent().getExtras();
@@ -23,5 +26,8 @@ public class DetailActivity extends AppCompatActivity {
 
         // TODO: Once you have all the values for a contact add them to the views
         contactName.setText(name);
+        contactLastName.setText(lastName);
+        contactEmail.setText(email);
+        contactPhone.setText(phoneNumber);
     }
 }
