@@ -10,13 +10,66 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".DetailActivity">
 
+    <ImageView
+        android:id="@+id/avatar"
+        android:src="@drawable/ic_default_avatar"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
     <TextView
         android:id="@+id/contact_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="20dp" />
+        android:layout_marginStart="47dp"
+        android:layout_toEndOf="@+id/avatar"
+        android:text="@string/hint_name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/avatar"
+        android:layout_marginTop="30dp"
+        android:text="@string/hint_email" />
+
+    <TextView
+        android:id="@+id/txt_phone"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txt_email"
+        android:layout_marginTop="25dp"
+        android:text="@string/hint_phone_number" />
+
+    <TextView
+        android:id="@+id/contact_last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/avatar"
+        android:layout_alignStart="@+id/contact_name"
+        android:text="@string/hint_last_name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/contact_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_phone"
+        android:layout_alignStart="@+id/contact_last_name"
+        android:text="@string/hint_email" />
+
+    <TextView
+        android:id="@+id/contact_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_phone"
+        android:layout_alignBottom="@+id/txt_phone"
+        android:layout_alignStart="@+id/contact_email"
+        android:text="@string/hint_phone_number" />
 
 </RelativeLayout>

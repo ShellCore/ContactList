@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">連絡先リスト</string>
+    <string name="button_new_contact">新しい連絡先</string>
+    <string name="hint_email">電子メイル</string>
+    <string name="hint_last_name">姓</string>
+    <string name="hint_name">名前</string>
+    <string name="hint_phone_number">電話</string>
+</resources>

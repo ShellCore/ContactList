@@ -55,6 +55,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DetailActivity.class);
         // TODO: Send the rest of contacts parameters
         intent.putExtra("name", name);
+        intent.putExtra("lastName", lastName);
+        intent.putExtra("email", email);
+        intent.putExtra("phoneNumber", phoneNumberInt);
         startActivity(intent);
     }
 
