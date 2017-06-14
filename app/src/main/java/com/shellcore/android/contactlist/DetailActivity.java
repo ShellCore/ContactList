@@ -22,12 +22,12 @@ public class DetailActivity extends AppCompatActivity {
         String name = bundle.getString("name");
         String lastName = bundle.getString("lastName");
         String email = bundle.getString("email");
-        String phoneNumber = bundle.getString("phoneNumber");
+        Integer phoneNumber = bundle.getInt("phoneNumber");
 
         // TODO: Once you have all the values for a contact add them to the views
         contactName.setText(name);
         contactLastName.setText(lastName);
         contactEmail.setText(email);
-        contactPhone.setText(phoneNumber);
+        contactPhone.setText(String.valueOf(phoneNumber));
     }
 }
