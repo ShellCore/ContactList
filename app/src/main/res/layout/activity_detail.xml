@@ -20,16 +20,16 @@
         android:id="@+id/contact_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="47dp"
-        android:layout_toEndOf="@+id/avatar"
+        android:layout_marginStart="15dp"
         android:text="@string/hint_name"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/avatar" />
 
     <TextView
         style="@style/ShellStyle"
         android:id="@+id/txt_email"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:textStyle="bold"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -40,7 +40,7 @@
     <TextView
         style="@style/ShellStyle"
         android:id="@+id/txt_phone"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:textStyle="bold"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -54,16 +54,17 @@
         android:layout_height="wrap_content"
         android:text="@string/hint_last_name"
         android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="13dp"
         android:layout_below="@+id/contact_name"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="11dp" />
+        android:layout_alignStart="@+id/contact_name" />
 
     <TextView
         android:id="@+id/contact_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/txt_phone"
-        android:layout_alignStart="@+id/contact_last_name"
+        android:layout_toEndOf="@id/txt_email"
+        android:layout_marginLeft="10dp"
         android:text="@string/hint_email" />
 
     <TextView
